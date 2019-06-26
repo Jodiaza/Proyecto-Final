@@ -4,8 +4,17 @@ public class Articulo {
     
     private String nombre;
     private int costo;
+    private boolean disponibilidad;
 
-    public String getNombre() {
+    public boolean isDisponibilidad() {
+		return disponibilidad;
+	}
+
+	public void setDisponibilidad(boolean disponibilidad) {
+		this.disponibilidad = disponibilidad;
+	}
+
+	public String getNombre() {
         return nombre;
     }
 

@@ -1,5 +1,13 @@
 package datos;
 
-public class Perro {
+public class Perro extends Personaje{
+	
+    public Perro() {
+    	
+    }
     
+    @Override
+	public void emitirSonido() {
+		
+	}
 }

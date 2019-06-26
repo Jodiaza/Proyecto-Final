@@ -1,5 +1,7 @@
 package datos;
 
-public class Vidrios {
-    
+public class Vidrios extends Residuos{
+    public Vidrios() {
+    	
+    }
 }

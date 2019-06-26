@@ -1,12 +1,21 @@
 package datos;
 import java.util.*;
 
-public class Personaje {
+public abstract class Personaje implements Sonido{
     
     private String nombre;
     private ArrayList<Articulo> articulos;
+    private int salud;
 
-    public String getNombre() {
+    public int getSalud() {
+		return salud;
+	}
+
+	public void setSalud(int salud) {
+		this.salud = salud;
+	}
+
+	public String getNombre() {
         return nombre;
     }
 
@@ -22,4 +31,20 @@ public class Personaje {
         this.articulos = articulos;
     }
     
+    public void comer() {
+    	
+    }
+    
+    public void saltar() {
+    	
+    }
+    
+    public void enfermarse() {
+    	
+    }
+    
+    @Override
+	public void emitirSonido() {
+		
+	}
 }

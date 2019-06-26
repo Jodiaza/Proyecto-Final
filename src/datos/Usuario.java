@@ -4,10 +4,18 @@ public class Usuario {
     
     private String nombre;
     private String clave;
-    private int puntuacion;
     private int monedas;
+    private Personaje personaje;
 
-    public String getNombre() {
+    public Personaje getPersonaje() {
+		return personaje;
+	}
+
+	public void setPersonaje(Personaje personaje) {
+		this.personaje = personaje;
+	}
+
+	public String getNombre() {
         return nombre;
     }
 
@@ -21,14 +29,6 @@ public class Usuario {
 
     public void setClave(String clave) {
         this.clave = clave;
-    }
-
-    public int getPuntuacion() {
-        return puntuacion;
-    }
-
-    public void setPuntuacion(int puntuacion) {
-        this.puntuacion = puntuacion;
     }
 
     public int getMonedas() {

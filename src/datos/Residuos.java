@@ -1,11 +1,20 @@
 package datos;
 
-public class Residuos {
+public abstract class Residuos {
     
     private String tipo;
     private int cantidad;
+    private int recompensa;
 
-    public String getTipo() {
+    public int getRecompensa() {
+		return recompensa;
+	}
+
+	public void setRecompensa(int recompensa) {
+		this.recompensa = recompensa;
+	}
+
+	public String getTipo() {
         return tipo;
     }
 
@@ -21,4 +30,7 @@ public class Residuos {
         this.cantidad = cantidad;
     }
     
+    public void caer() {
+    	
+    }
 }
