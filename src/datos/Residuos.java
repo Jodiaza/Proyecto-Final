@@ -30,7 +30,4 @@ public abstract class Residuos {
         this.cantidad = cantidad;
     }
     
-    public void caer() {
-    	
-    }
 }

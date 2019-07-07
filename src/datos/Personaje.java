@@ -5,7 +5,7 @@ public abstract class Personaje implements Sonido{
     
     private String nombre;
     private ArrayList<Articulo> articulos;
-    private int salud;
+    private int salud=1000;
 
     public int getSalud() {
 		return salud;
@@ -31,12 +31,12 @@ public abstract class Personaje implements Sonido{
         this.articulos = articulos;
     }
     
-    public void comer() {
-    	
-    }
-    
-    public void saltar() {
-    	
+    public void comer(Residuos residuo) {
+    	if (salud<=800) {
+    		salud = salud+residuo.getRecompensa();
+    	}else {
+    		
+    	}
     }
     
     public void enfermarse() {
