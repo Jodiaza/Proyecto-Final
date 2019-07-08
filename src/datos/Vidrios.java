@@ -1,9 +1,11 @@
 package datos;
 
+import javax.swing.ImageIcon;
+
 public class Vidrios extends Residuos{
-    public Vidrios(int cantidad) {
+    public Vidrios() {
     	setTipo("Vidrios");
-    	setCantidad(cantidad);
     	setRecompensa(500);
+    	setImagen(new ImageIcon("./img/vidrio.png").getImage());
     }
 }

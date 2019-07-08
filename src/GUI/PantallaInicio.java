@@ -21,6 +21,8 @@ import java.awt.Image;
 import javax.swing.JLabel;
 import javax.swing.JProgressBar;
 import java.awt.Color;
+import javax.swing.BoxLayout;
+import javax.swing.JScrollBar;
 
 public class PantallaInicio {
 
@@ -69,25 +71,21 @@ public class PantallaInicio {
 		frame.getContentPane().add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		
-		JButton btnNewButton = new JButton();
+		JButton btnNewButton = new JButton(escalar(comer, 30, 30));
 		btnNewButton.setBounds(47, 391, 40, 40);
 		panel.add(btnNewButton);
-		btnNewButton.setIcon(escalar(comer, 30, 30));
-		
-		JButton btnNewButton_1 = new JButton("");
+
+		JButton btnNewButton_1 = new JButton(escalar(mueble, 30, 30));
 		btnNewButton_1.setBounds(118, 391, 40, 40);
 		panel.add(btnNewButton_1);
-		btnNewButton_1.setIcon(escalar(mueble, 30, 30));
 		
-		JButton btnNewButton_2 = new JButton("");
+		JButton btnNewButton_2 = new JButton(escalar(ajustes, 30, 30));
 		btnNewButton_2.setBounds(187, 391, 40, 40);
 		panel.add(btnNewButton_2);
-		btnNewButton_2.setIcon(escalar(ajustes, 30, 30));
 		
-		JButton btnNewButton_3 = new JButton("");
+		JButton btnNewButton_3 = new JButton(escalar(menu, 30, 30));
 		btnNewButton_3.setBounds(10, 11, 40, 40);
 		panel.add(btnNewButton_3);
-		btnNewButton_3.setIcon(escalar(menu, 30, 30));
 		
 		BufferedImage[] sprites = hoja.generarSprites(0);
 		JLabel lblNewLabel = new JLabel(escalar(sprites[0],140,105));
@@ -114,6 +112,13 @@ public class PantallaInicio {
 		progressBar_1.setBounds(118, 71, 132, 14);
 		panel.add(progressBar_1);
 		
+		JPanel panel_1 = new JPanel();
+		panel_1 = Menu.mostrarMenu();
+		panel_1.setBounds(10, 11, 140, 231);
+		panel.add(panel_1);
+		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
+		panel_1.setVisible(false);
+		
 		/*for(int i=1; i<sprites.length;i++) {
 			lblNewLabel.setIcon(escalar(sprites[i],140,105));
 			try
@@ -128,12 +133,12 @@ public class PantallaInicio {
 		
 	}
 	
-	public ImageIcon escalar(Image imagen, int ancho, int largo) {
+	public static ImageIcon escalar(Image imagen, int ancho, int largo) {
 		ImageIcon nuevaImagen = new ImageIcon(imagen.getScaledInstance(ancho, largo, Image.SCALE_SMOOTH));
 		return nuevaImagen;
 	}
 	
-	public ImageIcon escalar(Image imagen, JPanel panel) {
+	public static ImageIcon escalar(Image imagen, JPanel panel) {
 		ImageIcon nuevaImagen = new ImageIcon(imagen.getScaledInstance(panel.getWidth(), panel.getHeight(), Image.SCALE_SMOOTH));
 		return nuevaImagen;
 	}

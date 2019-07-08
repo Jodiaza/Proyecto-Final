@@ -1,9 +1,11 @@
 package datos;
 
+import javax.swing.ImageIcon;
+
 public class Plasticos extends Residuos{
-    public Plasticos(int  cantidad) {
-    	setCantidad(cantidad);
+    public Plasticos() {
     	setTipo("Plasticos");
     	setRecompensa(150);
+    	setImagen(new ImageIcon("./img/plastico.png").getImage());
     }
 }
