@@ -9,3 +9,5 @@ public class Plasticos extends Residuos{
     	setImagen(new ImageIcon("./img/plastico.png").getImage());
     }
 }
+
+//Bna no copeo de nada. Att: git
