@@ -27,19 +27,51 @@ public class Ajustes extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu1 = new javax.swing.JMenu();
+        cbxSonido = new javax.swing.JCheckBox();
+        jLabel1 = new javax.swing.JLabel();
+
+        jMenu1.setText("jMenu1");
+
+        cbxSonido.setText("jCheckBox1");
+        cbxSonido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbxSonidoActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Sonido");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(cbxSonido))
+                .addContainerGap(276, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(cbxSonido)
+                .addContainerGap(204, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void cbxSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxSonidoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbxSonidoActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox cbxSonido;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
     // End of variables declaration//GEN-END:variables
 }
