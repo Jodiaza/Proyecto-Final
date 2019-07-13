@@ -1,4 +1,4 @@
-package GUI;
+package UI;
 
 public class PantallaAccesorios extends Pantalla{
 	

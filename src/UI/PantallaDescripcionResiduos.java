@@ -1,4 +1,4 @@
-package GUI;
+package UI;
 
 public class PantallaDescripcionResiduos extends Pantalla{
 	
